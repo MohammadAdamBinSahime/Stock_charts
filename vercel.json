@@ -1,0 +1,12 @@
+{
+  "buildCommand": "cd stock-app && npm ci && npm run build",
+  "outputDirectory": "stock-app/build",
+  "installCommand": "cd stock-app && npm ci",
+  "framework": "create-react-app",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
